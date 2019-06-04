@@ -365,7 +365,7 @@ footer{
 
 @media(max-width: 500px){
 	.container{
-		width:500px;
+		width:100%;
 		/* margin: auto; */
 
 	}
@@ -386,25 +386,28 @@ footer{
 
 	.navigation ul{
 		flex-direction: column;
-		padding-left: 100px;
+    align-items: center;
+
 
 	}
 
-	.navigation ul li{
+	.navigation ul li {
 		border-top: 1px solid black;
-		padding-left: 130px;
-		padding-bottom: 0px;
-		width:500px; */
+		text-align: center;
+		padding-left: 35%;
+    width: 120%;
+
 	}
+  .navigation ul li a{
+    text-align:center;
+  }
 
 	.navigation ul li:last-child{
 		border-bottom: 1px black solid;
 	}
 
 	.navigation .logo-1{
-		width: 500px;
-		padding-right: 200px;
-		padding-bottom: 20px;
+		text-align: center;
 	}
 
 
@@ -453,7 +456,7 @@ footer{
 
 @media(max-width:800px){
 	.container{
-		width:800px;
+		width:95%;
 		margin: 0 auto;
 
 	}
@@ -463,8 +466,9 @@ footer{
 		flex-direction: column-reverse;
 	}
 
+
 	.navigation .logo-1{
-		padding-left: 100px;
+		text-align:center;
 	}
 
 	.cta .cta-text{
@@ -498,7 +502,7 @@ footer{
 	}
 
 	.contact{
-		margin-left: 0px;
+	padding-left: 35px;
 	}
 
 }
