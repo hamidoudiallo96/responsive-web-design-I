@@ -87,9 +87,9 @@ h1, h2, h3, h4, h5 {
 	justify-content: space-evenly;
 
 }
-.navigation{
+.navigation ul li{
   width: 100%;
-  padding-right: 100px;
+  /* padding-right: 140px; */
 }
 
 
@@ -102,11 +102,11 @@ h1, h2, h3, h4, h5 {
 	width: 85px;
 } */
 
-.major-head a{
+/* .major-head a{
 	margin: 20px;
 	padding: 0 5px;
 
-}
+} */
 
 .major-head a:hover{
 	text-decoration: underline;
@@ -191,6 +191,7 @@ margin-left: 30px;
 
 .contact{
 	margin-top: 40px;
+	padding-left: 20px;
 }
 
 .contact h4{
@@ -210,23 +211,6 @@ margin-left: 30px;
 footer{
 	text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* CSS sytling for services.html */
@@ -381,8 +365,8 @@ footer{
 
 @media(max-width: 500px){
 	.container{
-		width:100%;
-		margin: 0px auto;
+		width:500px;
+		/* margin: auto; */
 
 	}
 
@@ -390,26 +374,37 @@ footer{
 	.navigation{
 		display:flex;
 		flex-direction: column-reverse;
-		padding-left: 100px;
+		margin-bottom: 30px;
 
+	}
+
+	.navigation a{
+		padding-bottom:0px;
 	}
 
 
 
 	.navigation ul{
 		flex-direction: column;
+		padding-left: 100px;
 
 	}
 
 	.navigation ul li{
-		border-bottom: 2px solid black;
-		/* padding-left: 200px;
+		border-top: 1px solid black;
+		padding-left: 130px;
+		padding-bottom: 0px;
 		width:500px; */
 	}
 
+	.navigation ul li:last-child{
+		border-bottom: 1px black solid;
+	}
+
 	.navigation .logo-1{
-		border-bottom: 2px solid black;
-		/* width: 200px; */
+		width: 500px;
+		padding-right: 200px;
+		padding-bottom: 20px;
 	}
 
 
@@ -448,7 +443,7 @@ footer{
 	}
 
 	.contact{
-	 padding-left: 30px;
+	 padding-left: 40px;
 	}
 
 
@@ -458,7 +453,7 @@ footer{
 
 @media(max-width:800px){
 	.container{
-		width:100%;
+		width:800px;
 		margin: 0 auto;
 
 	}
@@ -489,7 +484,6 @@ footer{
 
 	.first-content{
 		margin-left: 20px;
-		width: 95%;
 	}
 
 	.middle-img{
@@ -501,11 +495,10 @@ footer{
 
 	.bottom-content{
 		margin-left: 20px;
-		width: 95%;
 	}
 
 	.contact{
-		margin-left: 30px;
+		margin-left: 0px;
 	}
 
 }
