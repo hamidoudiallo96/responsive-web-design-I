@@ -1,3 +1,679 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* Home Page CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* CSS Styling for index.html */
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+.major-head a{
+	display: flex;
+	list-style: none;
+	padding: 20px;
+	align-items: center;
+	color: grey;
+	text-decoration: none;
+	justify-content: space-evenly;
+
+}
+.navigation ul li{
+  width: 100%;
+  /* padding-right: 140px; */
+}
 
 
+
+
+/* nav ul li a{
+	color: grey;
+	text-decoration: none;
+	display: block;
+	width: 85px;
+} */
+
+/* .major-head a{
+	margin: 20px;
+	padding: 0 5px;
+
+} */
+
+.major-head a:hover{
+	text-decoration: underline;
+}
+
+.logo-1{
+display: block;
+margin-right:0px;
+margin-left: 30px;
+}
+
+
+/* .major-head{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px; */
+
+}
+
+.major-head a{
+	margin: 20px;
+	padding: 0 5px;
+
+}
+
+.cta{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.cta-text{
+	text-align: center;
+	font-size: 5em;
+}
+
+.cta-text button{
+	margin-top: 20px;
+	padding: 10px 30px;
+	border: 1px solid black;
+	width: 200px;
+
+}
+
+.first-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	margin-top: 60px;
+}
+
+.first-content .text-content{
+	margin: 40px 0px;
+	padding: 20px;
+
+}
+
+.text-content p{
+	font-size: 1em;
+}
+.middle-img{
+	margin-bottom: 40px;
+}
+
+.bottom-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+
+.bottom-content .bottom-text{
+	margin-bottom:40px;
+	padding: 20px;
+}
+
+.bottom-text p{
+	font-size: 1em;
+}
+
+
+.contact{
+	margin-top: 40px;
+	padding-left: 20px;
+}
+
+.contact h4{
+	padding-bottom: 2px;
+}
+
+.contact p:nth-child(2){
+	padding-top: 20px;
+}
+
+.contact p:nth-child(3){
+	padding-top: 30px;
+}
+
+
+
+footer{
+	text-align: center;
+}
+
+
+/* CSS sytling for services.html */
+/* Top-heading */
+main{
+	width: 880px;
+  margin: 0 auto;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	padding: 0;
+	align-items: center;
+
+
+}
+
+
+nav ul li a{
+	color: grey;
+	text-decoration: none;
+	display: block;
+	width: 85px;
+}
+
+nav ul li a:hover{
+	text-decoration: underline;
+}
+
+.logo{
+display: block;
+}
+
+nav{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px;
+
+}
+
+nav ul li a{
+	margin: 20px;
+	padding: 0 5px;
+
+}
+
+
+/* Lower header */
+.main-top .top-1 {
+	margin-top: 20px;
+}
+
+.main-top h3{
+	font-size: 2em;
+}
+
+
+
+/* Main-Content */
+
+.main-content{
+	/* width: 880px;
+  margin: 0 auto; */
+	/* max-width: 880px; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.main-content div{
+	border: 2px solid black;
+	margin: 40px 0px;
+	width: 400px;
+	background-color: #edeeef;
+}
+
+.content-1{
+	width: 400px;
+	padding: 30px;
+
+}
+.content-2{
+	width: 400px;
+	padding: 30px;
+
+}
+.content-3{
+	width: 400px;
+	padding: 30px;
+}
+
+.main-content h3{
+	font-size: 1em;
+
+}
+
+
+.main-content button{
+	margin-top: 20px;
+	padding: 10px 30px;
+	border: 1px solid black;
+	border-radius: 12px;
+}
+
+/* .main-content div{
+	border: 2px solid black;
+} */
+
+
+
+/* Bottom Content */
+.bottom-page{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+.services-info{
+	width: 400px;
+}
+
+
+.bottom-page p{
+	margin-bottom: 20px;
+}
+
+.bottom-page ul{
+	list-style: square;
+	padding-left: 20px;
+}
+.bottom-page ul li{
+	padding-bottom: 15px;
+
+}
+
+footer{
+	margin-top: 70px;
+	text-align: center;
+}
+
+
+/* Media Query Mobile */
+
+@media(max-width: 500px){
+	.container{
+		width:100%;
+		/* margin: auto; */
+
+	}
+
+
+	.navigation{
+		display:flex;
+		flex-direction: column-reverse;
+		margin-bottom: 30px;
+
+	}
+
+	.navigation a{
+		padding-bottom:0px;
+	}
+
+
+
+	.navigation ul{
+		flex-direction: column;
+    align-items: center;
+
+
+	}
+
+	.navigation ul li {
+		border-top: 1px solid black;
+		text-align: center;
+		padding-left: 35%;
+    width: 120%;
+
+	}
+  .navigation ul li a{
+    text-align:center;
+  }
+
+	.navigation ul li:last-child{
+		border-bottom: 1px black solid;
+	}
+
+	.navigation .logo-1{
+		text-align: center;
+	}
+
+
+	.cta .cta-text{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.cta .cta-pic{
+		display: none;
+	}
+
+
+	.first-content{
+		display: flex;
+		flex-direction: column;
+		margin-left: 10px;
+		margin-right:10px;
+	}
+
+	.middle-img{
+		max-width: 100%;
+		height:auto;
+		width: auto;
+		padding: 0px 20px;
+	}
+
+
+	.bottom-content{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		margin-left: 10px;
+		margin-right:10px;
+	}
+
+	.contact{
+	 padding-left: 40px;
+	}
+
+
+}
+
+
+
+@media(max-width:800px){
+	.container{
+		width:95%;
+		margin: 0 auto;
+
+	}
+
+	.navigation{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+
+
+	.navigation .logo-1{
+		text-align:center;
+	}
+
+	.cta .cta-text{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+  .cta .cta-text button{
+    background-color: white;
+  }
+
+	.cta .cta-pic{
+		display: none;
+	}
+
+
+	.first-content{
+		margin-left: 20px;
+	}
+
+	.middle-img{
+		max-width: 100%;
+		height:auto;
+		width: auto;
+		padding: 0px 25px;
+	}
+
+	.bottom-content{
+		margin-left: 20px;
+	}
+
+	.contact{
+	padding-left: 35px;
+	}
+
+}
+
+
+/* Service.html Mobile view */
+  @media(max-width:500px) {
+		body{
+			width:500px;
+			margin: 0px auto;
+		}
+	 	nav{
+			display:flex;
+			flex-direction: column-reverse;
+			text-align: center;
+
+		}
+
+		nav ul{
+			display: flex;
+			flex-direction: column;
+
+
+
+		}
+		nav ul li{
+			border: 1px solid black;
+			width:110%;
+			padding-left: 47%;
+			text-align: center;
+		}
+
+		nav ul li a{
+			text-align: center;
+		}
+		nav li:last-child{
+			border-bottom: 1px solid black;
+			width:110%;
+		}
+
+		nav .logo{
+			text-align: center;
+		}
+
+		.main-top{
+			display:flex;
+			flex-direction: column;
+		}
+
+		.main-top .services-header{
+			max-width: 100%;
+			height:auto;
+			width: auto;
+			padding: 0px 20px;
+		}
+
+		.main-top .top-1{
+			text-align: center;
+			padding-top: 10px;
+			height:auto;
+			width: auto;
+			max-width:100%;
+			padding: 0px 20px;
+
+		}
+
+
+		.main-content{
+			display:flex;
+			flex-direction:column;
+			justify-content: center;
+			text-align: center;
+			padding: 0px 20px 0px 20px;
+			margin-left: 10px;
+			margin-right:10px;
+
+		}
+
+		.main-content .content-1{
+			justify-content: center;
+			width: auto;
+
+		}
+
+		.main-content .content-2{
+			justify-content: center;
+			width: auto;
+		}
+
+		.main-content .content-3{
+			justify-content: center;
+			width: auto;
+		}
+
+		.bottom-page{
+			display:flex;
+			flex-direction: column-reverse;
+
+
+		}
+
+		.bottom-page .services-info{
+			border: 2px groove black;
+			background: #edeeef ;
+			text-align: center;
+			padding:20px 20px 20px 20px ;
+			width: 95%;
+			margin-left: 20px;
+
+
+		}
+
+		.bottom-page .pic-1{
+			display:none;
+		}
+
+		.bottom-page .services-info ul{
+			list-style: none;
+
+		}
+
+  }
+
+
+
+	@media (max-width: 800px) {
+		body{
+			width: 800px;
+			margin: 0 auto;
+		}
+
+		nav{
+			display:flex;
+			flex-direction: column-reverse;
+		}
+
+
+		nav .logo{
+			text-align:center;
+		}
+
+		nav ul li{
+			margin-left: 10px;
+		}
+
+		.main-top .services-header{
+			max-width: 100%;
+			height:auto;
+			width: auto;
+			padding: 0px 20px;
+		}
+
+		.main-top .top-1{
+			text-align: center
+			width: 97%;
+			padding-left: 20px;
+			padding-right: 20px;
+
+			}
+		}
+
+		.main-content{
+			width: 97%;
+			padding-left: 20px;
+		}
+
+
+		.bottom-page{
+			width: 97%;
+			padding-left: 20px;
+		}
+
+
+	}
